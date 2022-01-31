@@ -1,3 +1,7 @@
-#login-button{
-    margin: 0 8px 8px 0;
+#login-button {
+  margin: 0 8px 8px 0;
+}
+#home {
+  background: #ffc107;
+  color: #fff;
 }
