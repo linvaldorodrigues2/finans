@@ -27,7 +27,8 @@
           <a href="" class="navbar-brand">
             <img src="../img/logo.png" alt="logo.png" width="142" />
           </a>
-          <button
+          <button 
+            id="menu-mobile"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -118,7 +119,7 @@
               <a class="btn btn-primary" href="#">Veja mais</a>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 d-none d-md-block">
               <img class="img-fluid" src="../img/saiba.png" alt="saiba.png">
           </div>
         </div>
@@ -128,7 +129,7 @@
     <section class="caixa">
       <div class="container d-flex">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 d-none d-md-block">
             <img class="img-fluid" src="../img/juros.png" alt="juros.png">
           </div>
           <div class="col-md-6 align-self-center">
@@ -136,6 +137,7 @@
             <p>
               Manter as contas em dia é sempre um problema? O finans avisa você: receba alertas de contas a pagar e a receber!
             </p>
+            <button class="btn btn-primary">Veja mais</button>
           </div>
         </div>
       </div>
@@ -144,22 +146,22 @@
     <section class="caixa">
       <div class="container d-flex">
         <div class="row">
-          <div class="col-md-4">
-            <img class="img-fluid" src="../img/facil.png" alt="facil.png">
+          <div class="col-md-4 caixa-mobile">
+            <img class="img-fluid d-none d-md-block" src="../img/facil.png" alt="facil.png">
             <h2 class="display-6">Fácil de usar</h2>
             <p>
               O Finans vai além do básico e permite que você controles incriveis, essenciais para suas finanças. Simples como tem que ser!
             </p>
           </div>
-          <div class="col-md-4">
-            <img class="img-fluid" src="../img/economize.png" alt="economize.png">
+          <div class="col-md-4 caixa-mobile">
+            <img class="img-fluid d-none d-md-block" src="../img/economize.png" alt="economize.png">
             <h2 class="display-6">Economize seu tempo</h2>
             <p>
               Tempo é dinheiro! Em segundos, você tem tudo sob controle e aproveite seu tempo com o que realmente importa pra você!
             </p>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="../img/suporte.png" alt="suporte.png">
+            <img class="img-fluid d-none d-md-block" src="../img/suporte.png" alt="suporte.png">
             <h2 class="display-6">Suporte amigo</h2>
             <p>
               Dúvidas? Perguntas? Nosso suporte super legal ajuda você! A gente tá aqui pra resolver seus problemas e deixar sua vidabem mais fácil!
@@ -168,7 +170,7 @@
         </div>
       </div>
     </section>
-    
+
     <footer class="mt-4 mb-4">
       <div class="container">
         <div class="row d-flex">
@@ -180,7 +182,7 @@
               <a href="">Preços</a>
             </span>
           </div>
-          <div class="col-md-4">
+          <div id="social" class="col-md-4">
             <a class="btn btn-light" href="">
               <i class="fab fa-facebook-square fa-2x"></i>
             </a>

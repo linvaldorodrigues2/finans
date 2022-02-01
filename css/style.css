@@ -1,5 +1,11 @@
+body{
+  min-width: 600px;
+}
 #login-button {
   margin: 0 8px 8px 0;
+}
+#menu-mobile{
+  border: none;
 }
 #home {
   background: #ffc107;
@@ -16,4 +22,37 @@ footer a {
   text-decoration: none;
   color: #000;
   margin: 0 10px 0 10px;
+}
+@media (min-width: 300px) and (max-width: 760px) {
+    #home span{
+      display: block;
+      padding: 10px 0;
+    }
+    .caixa-mobile{
+      margin: 10px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    footer{
+      height: 100px;
+    }
+    footer #social{
+      margin-top: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 985px){
+  footer .col-md-8 {
+    width: 350px;
+  }
+  footer #social{
+    width: 350px;
+  }
+  
+}
+@media (min-width: 986px) and (max-width: 1080px){
+  footer .col-md-8{
+    width: 600px;
+  }
+  footer #social{
+    width: 350px;
+  }
 }
