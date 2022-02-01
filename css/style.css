@@ -9,3 +9,11 @@
   padding: 60px 0;
   border-bottom: 1px solid #e5e5e5;
 }
+footer span {
+  height: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px 0 10px;
+}
