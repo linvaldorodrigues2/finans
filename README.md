@@ -1,2 +1,2 @@
 # Finans
-Projeto de estudo de uma plataforma de finanças pessoais
+Projeto plataforma de finanças pessoais
