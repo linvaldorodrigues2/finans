@@ -27,7 +27,7 @@ footer a {
 .caixa-form{
   height: 800px;
   padding-top: 100px;
-  border  : 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 .login-form, .cadastro-form{
   border: 2px solid rgb(228, 228, 228);
@@ -54,6 +54,9 @@ footer a {
       margin: 10px 0;
       border-bottom: 1px solid #e5e5e5;
     }
+    form.login-form{
+      margin: 0;
+    }
     footer{
       height: 100px;
     }
@@ -62,6 +65,9 @@ footer a {
     }
 }
 @media (min-width: 768px) and (max-width: 985px){
+  form.login-form{
+    margin: 0;
+  }
   footer .col-md-8 {
     width: 350px;
   }
