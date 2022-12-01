@@ -1,18 +1,18 @@
 /*Home*/
-body{
+body {
   min-width: 600px;
 }
 #login-button {
   margin: 0 8px 8px 0;
 }
-#menu-mobile{
+#menu-mobile {
   border: none;
 }
 #home {
   background: #ffc107;
   color: #fff;
 }
-.caixa{
+.caixa {
   padding: 60px 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -26,22 +26,23 @@ footer a {
 }
 
 /*login / cadastro*/
-.caixa-form{
+.caixa-form {
   height: 800px;
   padding-top: 100px;
   border: 1px solid #e5e5e5;
 }
-.login-form, .cadastro-form{
+.login-form,
+.cadastro-form {
   border: 2px solid rgb(228, 228, 228);
   border-radius: 20px;
   margin-right: 50px;
   padding: 40px 30px;
 }
-.login-form{
+.login-form {
   width: 400px;
   height: 400px;
 }
-.login-texto{
+.login-texto {
   font-size: 1.6em;
   width: 330px;
   margin-left: 30px;
@@ -49,81 +50,80 @@ footer a {
 }
 
 /*planos*/
-.caixa-planos{
+.caixa-planos {
   border-bottom: 1px solid #e5e5e5;
   padding: 20px 0;
 }
-.caixa-planos img{
+.caixa-planos img {
   width: 90%;
   position: relative;
   top: 24px;
   z-index: 0;
 }
-#anual{
-  background: #0D6EFD;
+#anual {
+  background: #0d6efd;
   color: #fff;
 }
-.card-body{
-  background:#fff ;
+.card-body {
+  background: #fff;
   color: #000;
   border: 2px solid #e5e5e5;
   width: 248px;
   height: 280px;
-  border-radius:10px;
+  border-radius: 10px;
 }
-.cifrao{
+.cifrao {
   font-size: 0.8rem;
 }
-.plano-titulo{
+.plano-titulo {
   font-size: 1.7rem;
 }
-.preco-plano{
+.preco-plano {
   font-size: 2rem;
   font-weight: 500;
 }
-.plano-descricao{
+.plano-descricao {
   font-size: 0.8rem;
 }
-a.botao{
+a.botao {
   margin-top: 45px;
 }
 
 @media (min-width: 300px) and (max-width: 760px) {
-    #home span{
-      display: block;
-      padding: 10px 0;
-    }
-    .caixa-mobile{
-      margin: 10px 0;
-      border-bottom: 1px solid #e5e5e5;
-    }
-    form.login-form{
-      margin: 0;
-    }
-    footer{
-      height: 100px;
-    }
-    footer #social{
-      margin-top: 30px;
-    }
+  #home span {
+    display: block;
+    padding: 10px 0;
+  }
+  .caixa-mobile {
+    margin: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  form.login-form {
+    margin: 0;
+  }
+  footer {
+    height: 100px;
+  }
+  footer #social {
+    margin-top: 30px;
+  }
 }
-@media (min-width: 768px) and (max-width: 985px){
-  form.login-form{
+@media (min-width: 768px) and (max-width: 985px) {
+  form.login-form {
     margin: 0;
   }
   footer .col-md-8 {
     width: 350px;
   }
-  footer #social{
+  footer #social {
     width: 350px;
   }
-  
 }
-@media (min-width: 986px) and (max-width: 1080px){
-  footer .col-md-8{
+@media (min-width: 986px) and (max-width: 1080px) {
+  footer .col-md-8 {
     width: 600px;
   }
-  footer #social{
+  footer #social {
     width: 350px;
   }
 }
