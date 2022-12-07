@@ -45,7 +45,8 @@ function cadastrarDespesa() {
   let ano = document.getElementById("ano");
   let mes = document.getElementById("mes");
   let dia = document.getElementById("dia");
-  let tipo = document.getElementById("descricao");
+  let tipo = document.getElementById("tipo");
+  let descricao = document.getElementById('descricao')
   let valor = document.getElementById("valor");
 
   let despesa = new Despesa(
@@ -58,5 +59,35 @@ function cadastrarDespesa() {
   );
   if (despesa.validaDados()) {
     Bd.gravar(despesa);
+
+    //alert modal -> sucesso
+    document.getElementById("modal_titulo_div").className =
+      "modal-header text-success";
+    document.getElementById("modal_titulo").innerHTML =
+      "Cadastro inserido com sucesso";
+    document.getElementById("modal_descricao").innerHTML =
+      "Despesa cadastrada com sucesso!";
+    document.getElementById("modal_button").className = "btn btn-success";
+    document.getElementById("modal_button").innerHTML = "Voltar";
+
+    $("#modalRegistroDespesa").modal("show");
+
+    ano.value = "";
+    mes.value = "";
+    dia.value = "";
+    tipo.value = "";
+    descricao.value = "";
+    valor.value = "";
+  } else {
+    //alert modal -> erro
+    document.getElementById("modal_titulo").innerHTML = "Erro!";
+    document.getElementById("modal_titulo_div").className =
+      "modal-header text-danger";
+    document.getElementById("modal_descricao").innerHTML =
+      "Erro na gravação, verifique se todos os campos foram preenchidos corretamente.";
+    document.getElementById("modal_button").innerHTML = "Voltar e corrigir";
+    document.getElementById("modal_button").className = "btn btn-danger";
+
+    $("#modalRegistroDespesa").modal("show");
   }
 }

@@ -130,9 +130,46 @@
           </div>
           <!--botão-adicionar despesa-->
           <div class="col-md-2 d-flex justify-content-start">
-            <button onclick="cadastrarDespesa()" type="button" class="btn btn-primary">
+            <button
+              onclick="cadastrarDespesa()"
+              type="button"
+              class="btn btn-primary"
+            >
               <i class="fas fa-plus"></i>
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalRegistroDespesa"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div id="modal_titulo_div">
+            <h1 class="modal-title fs-5" id="modal_titulo"></h1>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" id="modal_descricao"></div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              id="modal_button"
+            ></button>
           </div>
         </div>
       </div>
