@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
     />
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <!--Fontawesome-->
     <script
       defer
@@ -20,22 +22,20 @@
 <body onload="recuperaDespesas()">
   <nav class="navbar navbar-expand-lg bg-warning mb-5">
     <div class="container">
-      <a class="navbar-brand" href="" alt="Orçamento pessoal">
+      <a class="navbar-brand" href="../html/home.html" alt="Orçamento pessoal">
         <img src="../img/logo.png" alt="logo.png" width="142" height="35" />
       </a>
       <button
+        id="menu-mobile"
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#cadastro"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-bs-target="#consulta"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="cadastro">
+      <div class="collapse navbar-collapse" id="consulta">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a
