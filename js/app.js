@@ -48,6 +48,7 @@ class BancoDeDados {
       if (despesa == null) {
         continue;
       }
+      despesa.id = i;
       despesas.push(despesa);
     }
 
@@ -87,6 +88,10 @@ class BancoDeDados {
 
     console.log(filtraDespesas);
     return filtraDespesas;
+  }
+
+  removerDespesa(id) {
+    localStorage.removeItem(id);
   }
 }
 let Bd = new BancoDeDados();
@@ -173,6 +178,20 @@ function recuperaDespesas(despesas = Array(), filtro = false) {
     linha.insertCell(1).innerHTML = d.tipo;
     linha.insertCell(2).innerHTML = d.descricao;
     linha.insertCell(3).innerHTML = `R$${d.valor}`;
+
+    //botão excluir despesa
+    let btn = document.createElement("button");
+    btn.className = "btn btn-danger";
+    btn.innerHTML = '<i class="fas fa-times"></i>';
+    btn.id = `id_despesa_${d.id}`;
+
+    btn.onclick = function () {
+      let id = this.id.replace("id_despesa_", "");
+      Bd.removerDespesa(id);
+      window.location.reload();
+    };
+
+    linha.insertCell(4).append(btn);
   });
 }
 
