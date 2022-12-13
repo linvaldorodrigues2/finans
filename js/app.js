@@ -188,7 +188,11 @@ function recuperaDespesas(despesas = Array(), filtro = false) {
     btn.onclick = function () {
       let id = this.id.replace("id_despesa_", "");
       Bd.removerDespesa(id);
-      window.location.reload();
+      $("#despesaExcluida").modal("show");
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 2500);
     };
 
     linha.insertCell(4).append(btn);

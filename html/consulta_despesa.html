@@ -11,6 +11,12 @@
     />
     <!--bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <!--Fontawesome-->
     <script
       defer
@@ -155,5 +161,41 @@
       </div>
     </div>
   </div>
+
+  <div
+      class="modal fade"
+      id="despesaExcluida"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-danger">
+            <h1 class="modal-title fs-5">
+              Despesa apagada
+            </h1>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">Despesa foi deletada com sucesso!</div>
+
+          <div class="modal-footer">
+            <button
+              class="btn btn-danger"
+              type="button"
+              data-bs-dismiss="modal"
+              id="modal_button"
+            >Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
